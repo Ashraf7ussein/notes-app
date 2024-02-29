@@ -1,3 +1,5 @@
+import deleting from "../images/delete.png";
+
 const notesContainer = document.querySelector(".notes-container");
 const createBtn = document.querySelector(".btn");
 let notes = document.querySelectorAll(".input-box");
@@ -17,7 +19,7 @@ createBtn.addEventListener("click", ()=> {
     let img = document.createElement("img");
     inputBox.className = "input-box";
     inputBox.setAttribute("contenteditable", "true");
-    img.src = "images/delete.png";
+    img.src = deleting;
     notesContainer.appendChild(inputBox).appendChild(img);
 });
 
